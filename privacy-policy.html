@@ -37,7 +37,7 @@
 <body>
 
 <h1>Bingua — Privacy Policy</h1>
-<p class="meta">Version 1.0 · Last updated: 1 August 2026</p>
+<p class="meta">Version 1.1 · Last updated: 2 August 2026</p>
 
 <h2>1. Who we are</h2>
 
@@ -61,7 +61,7 @@ with, how long it is kept, and what rights you have.</p>
 <ul>
   <li><strong>You can use Bingua without an account.</strong> Your flashcards, progress and settings then stay on your device — we never see them.</li>
   <li><strong>An account is optional</strong> and exists only so your learning data can be synced and restored. It requires an email address and nothing else.</li>
-  <li><strong>Words and sentences you tap</strong> — taken from the video's public subtitles, not from anything you write — are sent to an AI provider to generate explanations. That provider is contractually forbidden from training its models on them.</li>
+  <li><strong>Words and sentences you tap</strong> — taken from the video's public subtitles, not from anything you write — are sent to an AI provider to generate explanations. That provider is contractually forbidden from training its models on them, and does not store them at all.</li>
   <li><strong>We collect anonymous usage statistics to see which features are used, including which words you tap or save.</strong> You can switch this off in Profile → Privacy.</li>
   <li><strong>We do not</strong> record your screen, use advertising identifiers, track you across other apps or websites, sell or share your data for advertising, or show ads.</li>
   <li><strong>You can delete your account and all its data from inside the app</strong>, at any time: Profile → Delete account.</li>
@@ -98,7 +98,7 @@ anything derived from your device or your identity.</p>
   <td>Generate AI explanations of a word or sentence you tapped</td>
   <td>The tapped word, the subtitle sentence and its translation (all public video content), plus your install ID and — if signed in — your account ID</td>
   <td>Performance of a contract, Art. 6(1)(b)</td>
-  <td>Not stored by us. See §5 for our AI provider's retention.</td>
+  <td>Not stored — neither by us nor by our AI provider (§5).</td>
 </tr>
 <tr>
   <td>Enforce the free-tier AI allowance and prevent abuse of our AI and servers</td>
@@ -116,7 +116,7 @@ anything derived from your device or your identity.</p>
   <td>Understand how the app is used, so we can improve it</td>
   <td>Product events (e.g. "video watched", "quiz completed"), install ID, account ID once signed in, app version, device model, OS version, language, timezone, and a country derived from your IP address by our analytics provider. Two of these events &mdash; tapping a word for a translation, and saving a word as a flashcard &mdash; also include <strong>the word itself</strong>, so we can see which vocabulary learners actually reach for. These are words from the public subtitles of the videos in the app; nothing you type is ever included</td>
   <td>Legitimate interests, Art. 6(1)(f) — specifically: understanding which features are used and where users get stuck, in order to improve the app. <strong>You can object at any time using the switch in Profile → Privacy</strong> (see §8).</td>
-  <td>24 months</td>
+  <td>12 months</td>
 </tr>
 <tr>
   <td>Act on reports about inappropriate videos</td>
@@ -242,7 +242,7 @@ word you tapped.</p>
 <p>Under our agreement with Groq:</p>
 <ul>
   <li>Groq is <strong>contractually prohibited from using these inputs or outputs to train or fine-tune any model</strong>.</li>
-  <li>Groq does not retain request data by default. It may retain data for <strong>up to 30 days</strong> where necessary to troubleshoot errors or investigate suspected abuse.</li>
+  <li>We have enabled <strong>Zero Data Retention</strong> on our Groq account, so Groq does <strong>not store the inputs or outputs of these requests at all</strong> — not even the limited window it would otherwise be permitted to keep them for troubleshooting and abuse investigation.</li>
   <li>Processing takes place in the United States, under Standard Contractual Clauses.</li>
 </ul>
 
@@ -262,8 +262,8 @@ account (Profile → Delete account, or by emailing us). Copies may persist in e
 <strong>30 days</strong> before being overwritten.</p>
 
 <h3>Data that expires automatically</h3>
-<p>Rate-limiting records expire within <strong>24 hours</strong>. Analytics events are kept for a maximum of
-<strong>24 months</strong>.</p>
+<p>Rate-limiting records expire within <strong>24 hours</strong>. Analytics events are deleted by our
+analytics provider after <strong>12 months</strong>.</p>
 
 <h3>Data we keep after account deletion — and why</h3>
 <ul>
