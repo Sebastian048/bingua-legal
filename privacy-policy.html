@@ -37,7 +37,7 @@
 <body>
 
 <h1>Bingua — Privacy Policy</h1>
-<p class="meta">Version 1.1 · Last updated: 2 August 2026</p>
+<p class="meta">Version 1.2 · Last updated: 4 August 2026</p>
 
 <h2>1. Who we are</h2>
 
@@ -101,10 +101,10 @@ anything derived from your device or your identity.</p>
   <td>Not stored — neither by us nor by our AI provider (§5).</td>
 </tr>
 <tr>
-  <td>Enforce the free-tier AI allowance and prevent abuse of our AI and servers</td>
+  <td>Prevent abuse of our AI services and servers</td>
   <td>Install ID, account ID, request counters, IP address (short-lived, for rate limiting)</td>
-  <td>Legitimate interests, Art. 6(1)(f) — specifically: preventing circumvention of the free allowance, protecting our servers from abuse, and controlling AI costs that would otherwise make the free tier unsustainable</td>
-  <td>Allowance counters are kept indefinitely (see §6). Rate-limit records expire within 24 hours.</td>
+  <td>Legitimate interests, Art. 6(1)(f) — specifically: protecting our servers from abuse, and controlling AI costs that would otherwise make the service unsustainable</td>
+  <td>Request counters are kept indefinitely (see §6). Rate-limit records expire within 24 hours.</td>
 </tr>
 <tr>
   <td>Provide and manage your subscription</td>
@@ -234,7 +234,8 @@ display them in the app.</p>
 <p>When you tap a word, or open a sentence breakdown, Bingua sends that word or sentence — together with
 the surrounding subtitle line and its translation, all of which are public video content — to our
 servers, which forward it to <strong>Groq</strong> to generate the explanation. Your install ID travels
-with the request so we can enforce the free allowance, and your account ID does too if you are signed in.</p>
+with the request so we can rate-limit it and prevent abuse, and your account ID does too if you are signed
+in.</p>
 
 <p><strong>We never send anything you have typed</strong> — the request contains only subtitle text and the
 word you tapped.</p>
@@ -267,10 +268,10 @@ analytics provider after <strong>12 months</strong>.</p>
 
 <h3>Data we keep after account deletion — and why</h3>
 <ul>
-  <li><strong>Free-allowance counters.</strong> The counters that track how many free AI explanations an
-      install or account has used are keyed only to the install ID or account ID and are retained
-      indefinitely. Deleting them would reset the free allowance and make it trivially repeatable, which
-      is the abuse the counter exists to prevent.</li>
+  <li><strong>AI request counters.</strong> The counters that track how many AI explanations an install or
+      account has requested are keyed only to the install ID or account ID and are retained
+      indefinitely. Deleting them would reset the counters and make abuse of our AI services trivially
+      repeatable, which is what they exist to prevent.</li>
   <li><strong>Video reports.</strong> Reports are moderation records about a <em>video</em>, not about you.
       They are retained, with any link to your account removed.</li>
 </ul>
