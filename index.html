@@ -3,22 +3,31 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<!-- Same posture as the two legal documents: noindex, follow — crawlable so the
-     directive is actually read, but not surfaced in search results. -->
-<meta name="robots" content="noindex, follow">
+<!-- DELIBERATELY INDEXABLE, unlike the two legal documents (which carry
+     noindex to keep the owner's address out of search results). This page is
+     the app's HOME PAGE for Google's OAuth brand verification, and a home page
+     that refuses indexing invites a reviewer to doubt it is a real one. It
+     carries no personal address, so there is nothing here to hide. -->
 <!-- Google Search Console ownership proof for the URL-prefix property
      https://sebastian048.github.io/bingua-legal/ (added 2026-08-07).
-     LOAD-BEARING — DO NOT REMOVE. It is what lets sebastian048.github.io be an
-     "authorized domain" on the Bingua OAuth consent screen, which is what makes
-     Google sign-in say "continue to Bingua" instead of the raw Supabase project
-     host. Google re-checks periodically; strip this tag and verification lapses
-     and the branding can revert. → docs/subsystems/auth-profile.md -->
+     Kept, but NO LONGER the load-bearing proof: OAuth brand verification
+     rejected sebastian048.github.io outright ("not registered to you" — the
+     domain belongs to GitHub, and a Search Console property proves control of a
+     path, not registration of a domain). Ownership now rests on the bingua.app
+     DOMAIN property verified by DNS TXT in Cloudflare. Harmless to keep while
+     the github.io URLs still 301 here. → docs/subsystems/auth-profile.md -->
 <meta name="google-site-verification" content="SyNX7HuTmsc_My1zA91BtWfspZilrJmisRGGHeucI3Q" />
-<title>Bingua — Support</title>
+<!-- Title and H1 must read exactly "Bingua" — the OAuth consent screen's app
+     name is "Bingua", and verification failed once on the mismatch when this
+     page was titled "Bingua — Support". Keep them in sync with the Branding
+     page in Google Cloud. -->
+<title>Bingua — learn a language from real video</title>
+<meta name="description" content="Bingua teaches languages through real video: an endless feed of authentic videos in the language you're learning, with dual-language transcripts, tap-to-translate, flashcards and quizzes.">
 <style>
   body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
          max-width: 760px; margin: 0 auto; padding: 24px 20px 80px; color: #1c1c1e; line-height: 1.55; }
-  h1 { font-size: 1.7em; margin-bottom: 0.2em; }
+  h1 { font-size: 1.7em; margin-bottom: 0.1em; }
+  .tagline { font-size: 1.15em; color: #6e6e73; margin-top: 0; margin-bottom: 1.4em; }
   h2 { font-size: 1.25em; margin-top: 2em; }
   h3 { font-size: 1.02em; margin-top: 1.4em; }
   .meta { color: #6e6e73; font-size: 0.95em; }
@@ -34,14 +43,39 @@
     .summary { background: #1c1c1e; }
     th { background: #1c1c1e; }
     th, td { border-color: #3a3a3c; }
-    .meta { color: #98989d; }
+    .meta, .tagline { color: #98989d; }
   }
 </style>
 </head>
 <body>
 
-<h1>Bingua — Support</h1>
-<p class="meta">Last updated: 4 August 2026</p>
+<h1>Bingua</h1>
+<p class="tagline">Learn a language from real video.</p>
+
+<p>Bingua teaches languages through real video. You scroll a feed of videos in the language you're
+learning, each with a dual-language transcript that scrolls in time with the audio. Tap any word for an
+instant translation and explanation, swipe a line to break down the whole sentence, and save anything
+worth remembering — saved words and sentences become flashcards that come back for review just before
+you'd forget them, and feed a ten-question quiz with listening and speaking practice.</p>
+
+<p>Bingua is an app for iPhone and iPad. It is a paid subscription with no advertising, no third-party
+tracking and no screen recording. Signing in with Google or Apple is optional — it exists so your
+flashcards, progress and subscription follow you to a new device.</p>
+
+<h2>What you get</h2>
+
+<div class="summary">
+<ul>
+  <li><strong>An endless feed of authentic video</strong> in your target language, steerable by topic — not scripted textbook clips.</li>
+  <li><strong>Dual-language transcripts</strong> that follow the audio word by word.</li>
+  <li><strong>Tap any word</strong> for a translation, an explanation and its part of speech; swipe a line for a breakdown of the whole sentence.</li>
+  <li><strong>Flashcards with spaced repetition</strong> — saved words and sentences come back just before you'd forget them.</li>
+  <li><strong>A ten-question quiz</strong> with listening and speaking practice, built from what you personally saved.</li>
+  <li><strong>Six languages</strong> — Spanish, French, German, Dutch, Italian and Portuguese — taught from English.</li>
+</ul>
+</div>
+
+<h2>Support</h2>
 
 <div class="summary">
 <strong>Need help with something?</strong>
@@ -50,14 +84,6 @@
   <li>Please include your device model, your iOS version, and what you were doing when the problem happened. It makes a real difference to how quickly we can help.</li>
 </ul>
 </div>
-
-<h2>What Bingua is</h2>
-
-<p>Bingua teaches languages through real video. You scroll a feed of videos in the language you're
-learning, each with a dual-language transcript that scrolls in time with the audio. Tap any word for an
-instant translation and explanation, swipe a line to break down the whole sentence, and save anything
-worth remembering — saved words and sentences become flashcards that come back for review just before
-you'd forget them, and feed a ten-question quiz with listening and speaking practice.</p>
 
 <h2>Your subscription</h2>
 
